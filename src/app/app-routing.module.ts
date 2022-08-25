@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/authentication/login/login.component';
+// import { LoginComponent } from './components/authentication/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DepartmentComponent } from './components/department/department.component';
 import { HomeComponent } from './components/home/home.component';
+import { MeetComponent } from './components/meet/meet.component';
 import { ProjectComponent } from './components/project/project.component';
 
 const routes: Routes = [
 
   {
-    path: '', pathMatch: 'full', component: LoginComponent
+    path: '', pathMatch: 'full', component: HomeComponent
   },
   {
-    path: 'home', component: HomeComponent
+    path: 'dashboard', pathMatch: 'full', component: DashboardComponent
   },
   {
-    path: 'dashboard', component: DashboardComponent
+    path: 'project', pathMatch: 'full', component: ProjectComponent
   },
   {
-    path: '/projects', component: ProjectComponent
+    path: 'meet', pathMatch: 'full', component: MeetComponent
+  },
+  {
+    path: 'department', pathMatch: 'full', component: DepartmentComponent
   },
   {
     path: '**',
