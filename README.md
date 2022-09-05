@@ -1,14 +1,13 @@
 # EMS
+EMS short for Employee Managment System is a system aimed at helping employees and managers organize all their tasks in one place with meetings and track their progress, KPI and more.
+![](src/assets/images/layout/ems.JPG)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+Feel free to contribute and let me know what you think.
 
+The backend is build using django rest framework.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
