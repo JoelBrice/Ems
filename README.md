@@ -4,7 +4,7 @@ EMS short for Employee Managment System is a system aimed at helping employees a
 
 Feel free to contribute and let me know what you think.
 
-The backend is build using django rest framework.
+The backend will be built using django rest framework.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
