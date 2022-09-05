@@ -1,3 +1,33 @@
 .navbar {
-  display: inline-block;
+  display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: right;
+  }
+  
+  ul {
+    display: flex;
+    margin-right: 2em;
+  }
+  
+  ul>li {
+    display: block;
+    list-style-type: none;
+    margin: .3em;
+    font-size: 16px;
+    padding: .2em;
+  }
+  
+  ul>li>a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  ul>li:hover {
+    background: #d5d2ca;
+  }
+  
+  ul>li>a:hover {
+  
+    color: #055ed3;
 }

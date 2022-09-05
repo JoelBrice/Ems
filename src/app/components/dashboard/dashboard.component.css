@@ -1,0 +1,21 @@
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    min-height: 150px;
+    padding: 1em;
+    margin: .3em;
+    background: #ededed;
+    border-radius: 10px;
+    width: 200px;
+    color: #020220;
+}
+
+.card-group a {
+    text-decoration: none;
+}

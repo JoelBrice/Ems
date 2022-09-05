@@ -6,7 +6,7 @@ import { DepartmentComponent } from './components/department/department.componen
 import { HomeComponent } from './components/home/home.component';
 import { MeetComponent } from './components/meet/meet.component';
 import { ProjectComponent } from './components/project/project.component';
-
+import { TasksComponent } from './components/tasks/tasks.component';
 const routes: Routes = [
 
   {
@@ -23,6 +23,9 @@ const routes: Routes = [
   },
   {
     path: 'department', pathMatch: 'full', component: DepartmentComponent
+  },
+  {
+    path: 'tasks', pathMatch: 'full', component: TasksComponent
   },
   {
     path: '**',

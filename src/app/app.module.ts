@@ -18,6 +18,7 @@ import { ProjectComponent } from './components/project/project.component';
 import { SharedModule } from './components/shared/shared.module';
 // import { MatSliderModule } from '@angular/material/slider';
 import { HomeComponent } from './components/home/home.component';
+import { TasksComponent } from './components/tasks/tasks.component';
 // import { AngularMaterialModule } from './material.module';
 // import { MatMenu } from '@angular/material/menu';
 
@@ -34,7 +35,7 @@ import { HomeComponent } from './components/home/home.component';
     ProjectComponent,
     // MatSliderModule,
     HomeComponent,
-    // MatMenu
+    TasksComponent
   ],
   imports: [
     SharedModule,
