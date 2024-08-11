@@ -1,13 +1,15 @@
-<div class="navbar">
+<nav class="navbar">
   <div class="navbar-inner">
-    <ul>
-      <li>
-        <a href="/"> Home</a>
-      </li>
-      <li><a href="/project"> Projects</a></li>
-      <li><a href="/department"> Department</a></li>
-      <li><a href="/dashboard"> Dashboard</a></li>
-      <li><a href="/meet"> Meet</a></li>
+    <a class="navbar-logo" routerLink="/">EmployeeManager</a>
+    <ul class="navbar-menu">
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
+      <li><a routerLink="/department" routerLinkActive="active">Department</a></li>
+      <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+      <li><a routerLink="/meet" routerLinkActive="active">Meet</a></li>
     </ul>
+    <button class="navbar-toggle" (click)="toggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
-</div>
+</nav>

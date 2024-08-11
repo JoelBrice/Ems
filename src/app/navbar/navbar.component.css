@@ -1,3 +1,128 @@
+/* Navbar container styling */
 .navbar {
-  display: inline-block;
+  background-color: #343a40;  /* Dark background for a professional look */
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar inner styling */
+.navbar-inner {
+  width: 100%;
+  max-width: 1200px;  /* Adjust based on your design */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar logo styling */
+.navbar-logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Navbar menu styling */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar list item styling */
+.navbar-menu li {
+  margin: 0;
+}
+
+/* Navbar link styling */
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+/* Navbar link hover and active state styling */
+.navbar-menu a:hover,
+.navbar-menu a.active {
+  background-color: #495057;
+  color: #ffffff;
+}
+
+/* Toggle button styling */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #343a40;
+    position: absolute;
+    top: 60px; /* Adjust based on your navbar height */
+    left: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-menu a {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #495057;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
 }
