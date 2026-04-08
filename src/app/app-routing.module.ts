@@ -1,32 +1,35 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { LoginComponent } from './components/authentication/login/login.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { DepartmentComponent } from './components/department/department.component';
 import { HomeComponent } from './components/home/home.component';
-import { MeetComponent } from './components/meet/meet.component';
-import { ProjectComponent } from './components/project/project.component';
+import { AppShellComponent } from './core/layout/app-shell.component';
 
 const routes: Routes = [
-
+  { path: '', pathMatch: 'full', component: HomeComponent },
   {
-    path: '', pathMatch: 'full', component: HomeComponent
-  },
-  {
-    path: 'dashboard', pathMatch: 'full', component: DashboardComponent
-  },
-  {
-    path: 'project', pathMatch: 'full', component: ProjectComponent
-  },
-  {
-    path: 'meet', pathMatch: 'full', component: MeetComponent
-  },
-  {
-    path: 'department', pathMatch: 'full', component: DepartmentComponent
+    path: 'app',
+    component: AppShellComponent,
+    children: [
+      { path: '', pathMatch: 'full', redirectTo: 'workforce' },
+      {
+        path: 'workforce',
+        loadChildren: () =>
+          import('./features/workforce/workforce.module').then((module) => module.WorkforceModule)
+      },
+      {
+        path: 'operations',
+        loadChildren: () =>
+          import('./features/operations/operations.module').then((module) => module.OperationsModule)
+      },
+      {
+        path: 'insights',
+        loadChildren: () =>
+          import('./features/insights/insights.module').then((module) => module.InsightsModule)
+      }
+    ]
   },
   {
     path: '**',
-    redirectTo: 'authentication/404'
+    redirectTo: ''
   }
 ];
 

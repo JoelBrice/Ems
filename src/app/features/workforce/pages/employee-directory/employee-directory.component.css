@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.status {
+  text-transform: capitalize;
+}

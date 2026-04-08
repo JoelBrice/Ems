@@ -1,0 +1,26 @@
+<section class="workforce-home">
+  <h1>Workforce Control Center</h1>
+  <p>Phase 1 foundation for employee records, organization management, onboarding, and approvals.</p>
+
+  <div class="metric-grid" *ngIf="overview$ | async as overview">
+    <app-section-card title="Employees" subtitle="Current workforce inventory">
+      <strong>{{ overview.totalEmployees }}</strong>
+      <span>{{ overview.activeEmployees }} active / {{ overview.onboardingEmployees }} onboarding</span>
+    </app-section-card>
+
+    <app-section-card title="Departments" subtitle="Organizational structure coverage">
+      <strong>{{ overview.departments }}</strong>
+      <span>Active business units tracked</span>
+    </app-section-card>
+
+    <app-section-card title="Onboarding" subtitle="Open readiness actions">
+      <strong>{{ overview.openOnboardingTasks }}</strong>
+      <span>Pending tasks across HR, IT, and managers</span>
+    </app-section-card>
+
+    <app-section-card title="Approvals" subtitle="Outstanding decisions">
+      <strong>{{ overview.pendingApprovals }}</strong>
+      <span>Pending or escalated decisions</span>
+    </app-section-card>
+  </div>
+</section>

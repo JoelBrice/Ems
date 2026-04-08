@@ -1,0 +1,5 @@
+.app-shell-content {
+  min-height: calc(100vh - 64px);
+  padding: 1.5rem;
+  background: #f3f6fa;
+}

@@ -1,0 +1,8 @@
+<app-section-card title="Onboarding Center" subtitle="Cross-functional onboarding execution tracker">
+  <ul class="list">
+    <li *ngFor="let task of onboardingTasks$ | async">
+      <span>{{ task.taskName }}</span>
+      <small>{{ task.ownerRole }} · due {{ task.dueDate }} · {{ task.status }}</small>
+    </li>
+  </ul>
+</app-section-card>

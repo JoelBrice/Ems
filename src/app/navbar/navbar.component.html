@@ -1,12 +1,15 @@
 <nav class="navbar">
   <div class="navbar-inner">
-    <a class="navbar-logo" routerLink="/">EmployeeManager</a>
+    <a class="navbar-logo" routerLink="/">EMS Platform</a>
     <ul class="navbar-menu">
-      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/project" routerLinkActive="active">Projects</a></li>
-      <li><a routerLink="/department" routerLinkActive="active">Department</a></li>
-      <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
-      <li><a routerLink="/meet" routerLinkActive="active">Meet</a></li>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Overview</a></li>
+      <li><a routerLink="/app/workforce" routerLinkActive="active">Workforce</a></li>
+      <li><a routerLink="/app/workforce/employees" routerLinkActive="active">Employees</a></li>
+      <li><a routerLink="/app/workforce/organization" routerLinkActive="active">Organization</a></li>
+      <li><a routerLink="/app/workforce/onboarding" routerLinkActive="active">Onboarding</a></li>
+      <li><a routerLink="/app/workforce/approvals" routerLinkActive="active">Approvals</a></li>
+      <li><a routerLink="/app/operations" routerLinkActive="active">Operations</a></li>
+      <li><a routerLink="/app/insights" routerLinkActive="active">Insights</a></li>
     </ul>
     <button class="navbar-toggle" (click)="toggleMenu()">
       <span class="navbar-toggler-icon"></span>

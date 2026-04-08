@@ -1,0 +1,22 @@
+<app-section-card title="Employee Directory" subtitle="Canonical employee profile records">
+  <table>
+    <thead>
+      <tr>
+        <th>Employee #</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Location</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees$ | async">
+        <td>{{ employee.employeeNumber }}</td>
+        <td>{{ employee.fullName }}</td>
+        <td>{{ employee.title }}</td>
+        <td>{{ employee.location }}</td>
+        <td class="status">{{ employee.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</app-section-card>
