@@ -1,0 +1,19 @@
+.unit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.unit-tile {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+.unit-tile h4 {
+  margin: 0 0 0.45rem;
+}
+
+.unit-tile p {
+  margin: 0.2rem 0;
+}

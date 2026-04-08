@@ -1,0 +1,7 @@
+<app-section-card title="Approvals Center" subtitle="Decision workflow queue for key HR actions">
+  <div class="approval-item" *ngFor="let approval of approvals$ | async">
+    <h4>{{ approval.subject }}</h4>
+    <p>{{ approval.category }} request by {{ approval.requestedBy }}</p>
+    <span>Status: {{ approval.status }}</span>
+  </div>
+</app-section-card>

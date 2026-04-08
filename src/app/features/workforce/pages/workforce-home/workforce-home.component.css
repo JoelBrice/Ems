@@ -1,0 +1,25 @@
+.workforce-home h1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.workforce-home p {
+  color: #475569;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+strong {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.35rem;
+}
+
+span {
+  color: #475569;
+  font-size: 0.9rem;
+}

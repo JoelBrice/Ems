@@ -1,0 +1,22 @@
+.approval-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.7rem 0;
+}
+
+.approval-item:last-child {
+  border-bottom: 0;
+}
+
+.approval-item h4 {
+  margin: 0;
+}
+
+.approval-item p {
+  margin: 0.35rem 0;
+  color: #334155;
+}
+
+.approval-item span {
+  text-transform: capitalize;
+  color: #475569;
+}

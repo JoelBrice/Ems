@@ -1,0 +1,10 @@
+<app-section-card title="Organization Structure" subtitle="Department ownership and headcount insights">
+  <div class="unit-grid">
+    <article *ngFor="let unit of organizationUnits$ | async" class="unit-tile">
+      <h4>{{ unit.name }}</h4>
+      <p><strong>Code:</strong> {{ unit.code }}</p>
+      <p><strong>Manager:</strong> {{ unit.managerName }}</p>
+      <p><strong>Headcount:</strong> {{ unit.headcount }}</p>
+    </article>
+  </div>
+</app-section-card>
